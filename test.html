@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Test</title>
+    <script type="text/javascript" charset="utf-8">
+      var new_content = [
+        "<p><span class='message'>Just some text</span></p>",
+        "<p><span class='message'>More Stuff</span></p>",
+        "<p><span class='message'>Poo...</span></p>",
+        "<p><span class='message'><a href='http://i.imgur.com/0sHdr.jpg'>http://i.imgur.com/0sHdr.jpg</a></span></p>",
+        "<p><span class='message'><a href='http://imgs.xkcd.com/comics/regular_expressions.png'>http://imgs.xkcd.com/comics/regular_expressions.png</a></span></p>",
+        "<p><span class='message'><a href='http://i.imgur.com/1JB85.gif'>http://i.imgur.com/1JB85.gif</a></span></p>",
+        "<p><span class='message'><a href='http://i.imgur.com/0khFF.gif'>http://i.imgur.com/0khFF.gif</a></span></p>",
+        "<p><span class='message'><a href='http://i.imgur.com/OmeIU.gif'>http://i.imgur.com/OmeIU.gif</a></span></p>",
+        "<p><span class='message'><a href='http://i.imgur.com/prPWR.gif'>http://i.imgur.com/prPWR.gif</a></span></p>",
+      ];
+    </script>
+  </head>
+  <body>
+    <table border="0">
+      <tr><th>Header</th></tr>
+      <tr>
+        <td id="maincell">
+          <table border="0" class="buffer channel">
+            <tr>
+              <td>
+                <div class="log">
+                  <p>Stuff</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <button onClick='javascript: (function() {$("div.log").append(new_content[Math.floor(Math.random()*new_content.length)]);}());'>Click For More Random Messages</button>
+    <script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="irccloud_inline_images.js"></script>
+  </body>
+</html>
