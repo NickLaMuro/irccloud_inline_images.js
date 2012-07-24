@@ -1,10 +1,10 @@
 (function() {
 
   var cssCode = document.createElement('link');
-  cssCode.setAttribute('rel', 'stylesheet');
-  cssCode.setAttribute('href', 'https://raw.github.com/NickLaMuro/irccloud_inline_images.js/master/inline_images.css');
-  cssCode.setAttribute('type', 'text/css');
-  cssCode.setAttribute('media', 'all');
+  cssCode.rel = 'stylesheet';
+  cssCode.href = 'https://raw.github.com/NickLaMuro/irccloud_inline_images.js/master/inline_images.css';
+  cssCode.type = 'text/css';
+  cssCode.media = 'all';
   document.head.appendChild(cssCode);
 
   function convert_link_to_image(link) {
