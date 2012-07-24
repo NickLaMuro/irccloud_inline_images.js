@@ -2,8 +2,8 @@
 
   var cssCode = document.createElement('link');
   cssCode.rel = 'stylesheet';
-  cssCode.href = 'https://raw.github.com/NickLaMuro/irccloud_inline_images.js/master/inline_images.css';
-  //cssCode.type = 'text/css';
+  cssCode.href = 'https://nicklamuro.github.com/irccloud_inline_images.js/stylesheets/inline_images.css';
+  cssCode.type = 'text/css';
   cssCode.media = 'all';
   document.getElementsByTagName('head')[0].appendChild(cssCode);
 
