@@ -1,8 +1,13 @@
 (function() {
 
+  var cssCode = document.createElement('link');
+  cssCode.setAttribute('rel', 'stylesheet');
+  cssCode.setAttribute('href', 'https://raw.github.com/NickLaMuro/irccloud_inline_images.js/master/inline_images.css');
+  document.body.appendChild(cssCode);
+
   function convert_link_to_image(link) {
     var href_url = $(link).attr("href")
-    var image_tag = '<img src="' + href_url + '"/>';
+    var image_tag = '<img src="' + href_url + '" class="inline_image"/>';
     $(link).html(image_tag);
   }
 
