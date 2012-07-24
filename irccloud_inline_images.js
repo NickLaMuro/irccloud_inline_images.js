@@ -1,8 +1,6 @@
 (function() {
 
   if(window.irccloudInlineImagesActive == undefined && !window.irccloudInlineImagesActive) {
-    console.log("This should only be called once");
-
     var cssCode = document.createElement('link');
     cssCode.rel = 'stylesheet';
     cssCode.href = 'http://nicklamuro.github.com/irccloud_inline_images.js/stylesheets/inline_images.css';
@@ -20,7 +18,6 @@
     window.irccloudInlineImagesActive = true;
   }
 
-  console.log("This should be called every time");
   function convert_link_to_image(link) {
     var href_url = $(link).attr("href")
     var image_tag = '<img src="' + href_url + '" class="inline_image"/>';
