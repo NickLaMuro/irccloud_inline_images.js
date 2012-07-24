@@ -46,9 +46,16 @@
 <div class="highlight"><pre><span class="nx">javascript</span><span class="o">:</span> <span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="kd">var</span> <span class="nx">jsCode</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">'script'</span><span class="p">);</span><span class="nx">jsCode</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">'src'</span><span class="p">,</span> <span class="s1">'https://raw.github.com/NickLaMuro/irccloud_inline_images.js/master/irccloud_inline_images.js'</span><span class="p">);</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">jsCode</span><span class="p">);}());</span>
 </pre></div>
 
+<p>
+  Or... just drag this link to your bookmarks bar:  
+  <a href="javascript: (function(){var jsCode = document.createElement('script');jsCode.setAttribute('src', 'https://raw.github.com/NickLaMuro/irccloud_inline_images.js/master/irccloud_inline_images.js');document.body.appendChild(jsCode);}());">IRCCloud Inline Images</a>
+</p>
+
 <h2>Word of Note</h2>
 
 <p>For now, I know that IRCCloud uses jQuery, so I am currently not loading it in myself, but I might add a conditional check for it in the future.</p>
+
+<p>Also, the stylesheets (all of 4 lines of code...) is being hosted through this github page, and through a unsecure connection.  To use this in it's current form, you will have to all 'insecure' content on the page.  When I decide to spring the cache and host this somewhere more legit, I will make sure https is available.</p>
 
 <p>(A more detailed README will be provided in the future)</p>
       </section>
