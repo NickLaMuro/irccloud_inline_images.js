@@ -2,7 +2,7 @@
 
   var cssCode = document.createElement('link');
   cssCode.rel = 'stylesheet';
-  cssCode.href = 'https://nicklamuro.github.com/irccloud_inline_images.js/stylesheets/inline_images.css';
+  cssCode.href = 'http://nicklamuro.github.com/irccloud_inline_images.js/stylesheets/inline_images.css';
   cssCode.type = 'text/css';
   cssCode.media = 'all';
   document.getElementsByTagName('head')[0].appendChild(cssCode);
