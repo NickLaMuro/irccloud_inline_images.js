@@ -2,8 +2,8 @@
 
   function convert_link_to_image(link) {
     var href_url = $(link).attr("href")
-    var image_tag = '<img src="' + href_url + '"></img>';
-    $(link).replaceWith(image_tag);
+    var image_tag = '<img src="' + href_url + '"/>';
+    $(link).html(image_tag);
   }
 
   $("div.log span.message a").filter(function() { return /.*(\.jpg|\.png|\.gif)$/.test($(this).attr("href")) }).each(function(index) {
