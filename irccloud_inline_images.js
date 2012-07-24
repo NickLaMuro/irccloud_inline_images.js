@@ -16,6 +16,8 @@
       });
     });
 
+    // Defines this so the items in this diff are only called once.
+    window.irccloudInlineImagesActive = true;
   }
 
   console.log("This should be called every time");
@@ -28,7 +30,5 @@
   $("div.log span.message a").filter(function() { return /.*(\.jpg|\.png|\.gif)$/.test($(this).attr("href")) }).each(function(index) {
     convert_link_to_image(this)
   });
-
-  window.irccloudInlineImagesActive = true;
 
 })();
