@@ -5,7 +5,7 @@
   cssCode.href = 'https://raw.github.com/NickLaMuro/irccloud_inline_images.js/master/inline_images.css';
   cssCode.type = 'text/css';
   cssCode.media = 'all';
-  document.head.appendChild(cssCode);
+  document.getElementByTagName('head')[0].appendChild(cssCode);
 
   function convert_link_to_image(link) {
     var href_url = $(link).attr("href")
