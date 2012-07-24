@@ -1,6 +1,6 @@
 (function() {
 
-  if(window.irccloudInlineImagesActive !== undefined && !window.irccloudInlineImagesActive) {
+  if(window.irccloudInlineImagesActive == undefined && !window.irccloudInlineImagesActive) {
     console.log("This should only be called once");
 
     var cssCode = document.createElement('link');
