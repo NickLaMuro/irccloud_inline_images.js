@@ -13,7 +13,7 @@ This is obviously not an officially supported plugin, but if you would like to t
 Add the following as the URL for a bookmark to try it out:
 
 ```javascript
-javascript: (function(){var jsCode = document.createElement('script');jsCode.setAttribute('src', 'https://raw.github.com/NickLaMuro/irccloud_inline_images.js/master/irccloud_inline_images.js');document.body.appendChild(jsCode);}());
+javascript: (function(){var jsCode = document.createElement('script');jsCode.setAttribute('src', 'https://raw.github.com/NickLaMuro/irccloud_inline_images.js/master/src/irccloud_inline_images.js');document.body.appendChild(jsCode);}());
 ```
 
 Word of Note
